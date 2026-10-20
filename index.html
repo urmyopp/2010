@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lá thư 20/10</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Dancing+Script:wght@500;700&family=Fraunces:ital,wght@0,300;0,500;1,300;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <section class="stage">
+    <p class="eyebrow">Ngày Phụ nữ Việt Nam</p>
+    <p class="teaser">Gửi em một chút tâm tình nhỏ</p>
+
+    <div class="env" id="env" role="button" tabindex="0" aria-label="Mở thư" aria-expanded="false">
+      <div class="env-back"></div>
+      <div class="env-card"><span id="cardTo">Bạn</span></div>
+      <div class="env-front"></div>
+      <div class="env-flap"></div>
+      <div class="seal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+    </div>
+    <p class="hint" id="hint"></p>
+  </section>
+
+  <div class="reveal" id="reveal">
+    <div class="reveal-clip">
+      <div class="reveal-body">
+        <article class="sheet">
+          <div class="sheet-top"><span>Thứ Ba</span><span>20.10.2026</span></div>
+          <div class="hero-num">
+            <span class="script">Chúc mừng ngày</span>
+            <h1>20<i>/</i>10</h1>
+          </div>
+          <p class="greet" id="greet">Gửi bạn,</p>
+          <div id="lines"></div>
+        </article>
+
+        <section class="garden-sec">
+          <h2>Khu vườn tình yêu của đôi ta</h2>
+          <p>Chạm vào khu vườn để vun trồng tình yêu nhé.</p>
+          <ul class="meanings" id="meanings"></ul>
+          <div class="garden-box"><canvas id="garden" aria-label="Vườn hoa, chạm để trồng thêm"></canvas></div>
+          <div class="garden-status">
+            <p class="planted" id="planted" aria-live="polite"></p>
+            <p class="count" id="count">Vườn đang chờ những bông hoa đầu tiên.</p>
+          </div>
+        </section>
+
+        <section class="send">
+          <button class="love" id="love" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            yêu mình nhé
+          </button>
+          <p class="sent" id="sent" hidden></p>
+        </section>
+
+        <p class="foot">Dành cho bông hoa đẹp nhất ngày hôm nay, trong lòng HMie.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
